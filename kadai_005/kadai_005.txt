@@ -1,0 +1,30 @@
+PS C:\Users\USER> cd C:\Users\USER\Desktop\SAMURAI_kanren\teishutu_kadai              
+PS C:\Users\USER\Desktop\SAMURAI_kanren\teishutu_kadai> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\USER\Desktop\SAMURAI_kanren\teishutu_kadai
+
+
+Mode                 LastWriteTime         Length Name                                                                     
+----                 -------------         ------ ----                                                                     
+d-----    令和8年10月2日     22:10                git_challenge                                                            
+
+
+PS C:\Users\USER\Desktop\SAMURAI_kanren\teishutu_kadai> cd C:\Users\USER\Desktop\SAMURAI_kanren\teishutu_kadai\git_challenge
+
+PS C:\Users\USER\Desktop\SAMURAI_kanren\teishutu_kadai\git_challenge> git init
+Initialized empty Git repository in C:/Users/USER/Desktop/SAMURAI_kanren/teishutu_kadai/git_challenge/.git/
+PS C:\Users\USER\Desktop\SAMURAI_kanren\teishutu_kadai\git_challenge> echo "Hello, world!" >> hello_world.txt
+PS C:\Users\USER\Desktop\SAMURAI_kanren\teishutu_kadai\git_challenge> git add .
+PS C:\Users\USER\Desktop\SAMURAI_kanren\teishutu_kadai\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) 677ae2e] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\USER\Desktop\SAMURAI_kanren\teishutu_kadai\git_challenge> Add-Content hello_world.txt "こんにちは、世界！"
+PS C:\Users\USER\Desktop\SAMURAI_kanren\teishutu_kadai\git_challenge> git add .
+PS C:\Users\USER\Desktop\SAMURAI_kanren\teishutu_kadai\git_challenge> git commit -m "日本語訳を追記"
+[main 7da3e1a] 日本語訳を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\USER\Desktop\SAMURAI_kanren\teishutu_kadai\git_challenge> git log --oneline
+7da3e1a (HEAD -> main) 日本語訳を追記
+677ae2e hello_world.txtを追加
